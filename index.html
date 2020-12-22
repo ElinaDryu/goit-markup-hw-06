@@ -323,14 +323,25 @@
                     </a></li>
             </ul>
         </div>
+        <form class="footer-call-form">
+            <b class="footer-call-form-text">Подпишитесь на рассылку</b>
+            <div class="footer-call-container">
+            <div class="footer-form-field">
+                <label for="mail" class="footer-label"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-input" />
+            </div>
+            <button type="submit" class="footer-btn-send">Подписаться</button>
+            </div>
+
+        </form>
         </div>
     </footer>
 
 <!-- МОДАЛКА -->
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn close" data-modal-close></button>
-            <form action="#" class="modal-form js-speaker-form">
+            <form class="modal-form js-speaker-form">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-field">
                     <label for="name" class="modal-label">Имя</label>
@@ -362,16 +373,16 @@
                     </span>
                 </div>
                 <div class="form-field">
-                    <label for="comment">Комментарий</label>
+                    <label for="comment" class="label-comment">Комментарий</label>
                     <textarea class="comment" name="comment" id="comment" placeholder="Ведите текста"></textarea>
                 </div>
                 
-                <div class="form-field">
-                    <input type="checkbox" name="policy" id="policy" value="accept-policy" />
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                <div class="form-field checkbox">
+                    <input type="checkbox" name="policy" id="policy" value="accept-policy" class="modal-form-policy visually-hidden"/>
+                    <label for="policy" class="label-policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a></label>
                 </div>
                 
-                <button type="submit">Отправить</button>
+                <button type="submit" class="modal-btn-send">Отправить</button>
 
             </form>
         </div>
@@ -383,4 +394,3 @@
 </body>
 </html>
 
-is-hidden
