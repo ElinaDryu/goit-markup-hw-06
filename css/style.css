@@ -963,15 +963,14 @@ border-color: var(--btn-hover-color);
   background-image: url("../img/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* fill: var(--accent-color-blue); */
+  fill: var(--main-color-black);
 }
 
-/* .close:hover:before,
+.close:hover:before,
 .close:focus:before {
   fill: var(--accent-color-blue);
-  color: var(--accent-color-blue);
-  
-} */
+  background-image: url("../img/Vector_2.svg");
+}
 
 .form-title {
   color: var(--main-color-black);

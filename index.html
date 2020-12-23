@@ -326,7 +326,7 @@
         <form class="footer-call-form">
             <b class="footer-call-form-text">Подпишитесь на рассылку</b>
             <div class="footer-call-container">
-            <div class="footer-form-field">
+            <div class="footer-form-field" role="group">
                 <label for="mail" class="footer-label"></label>
                 <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-input" />
             </div>
@@ -341,9 +341,9 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn close" data-modal-close></button>
-            <form class="modal-form js-speaker-form">
+            <form  action="#" class="modal-form js-speaker-form">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                <div class="form-field">
+                <div class="form-field" role="group">
                     <label for="name" class="modal-label">Имя</label>
                     <span class="modal-form-wrapper">
                         <input type="text" name="user-name" id="name" placeholder=" " class="modal-input" autofocus />
@@ -353,7 +353,7 @@
                     </span>
                     
                 </div>
-                <div class="form-field">
+                <div class="form-field" role="group">
                     <label for="tel" class="modal-label">Телефон</label>
                     <span class="modal-form-wrapper">
                         <input type="tel" name="tel" id="tel" placeholder=" " class="modal-input"/>
@@ -363,7 +363,7 @@
                     </span>
                 </div>
                 
-                <div class="form-field">
+                <div class="form-field" role="group">
                     <label for="mail" class="modal-label">Почта</label>
                     <span class="modal-form-wrapper">
                         <input type="email" name="mail" id="mail" placeholder=" " class="modal-input"/>
@@ -372,12 +372,12 @@
                         </svg>
                     </span>
                 </div>
-                <div class="form-field">
+                <div class="form-field" role="group">
                     <label for="comment" class="label-comment">Комментарий</label>
                     <textarea class="comment" name="comment" id="comment" placeholder="Ведите текста"></textarea>
                 </div>
                 
-                <div class="form-field checkbox">
+                <div class="form-field checkbox" role="group">
                     <input type="checkbox" name="policy" id="policy" value="accept-policy" class="modal-form-policy visually-hidden"/>
                     <label for="policy" class="label-policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a></label>
                 </div>
@@ -386,11 +386,10 @@
 
             </form>
         </div>
-
-        
     </div>
 
     <script src="./js/modal.js"></script>
+ 
 </body>
 </html>
 
